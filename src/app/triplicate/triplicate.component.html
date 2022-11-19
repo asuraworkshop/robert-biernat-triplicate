@@ -1,1 +1,16 @@
-<p>triplicate works!</p>
+
+<form (ngSubmit)="onSubmit(input.value)">
+  <p>
+    <span>{{ triplicateLabel }}</span>
+  </p>
+  <p>
+    <mat-form-field hintLabel="Max 100 characters" appearance="fill">
+      <mat-label>Number string:</mat-label>
+      <input matInput #input maxlength="100" placeholder="Ex. 1,8,2,4,6">
+      <mat-hint align="end">{{input.value.length}}/100</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <button mat-raised-button color="primary">Primary</button>
+  </p>
+</form>
