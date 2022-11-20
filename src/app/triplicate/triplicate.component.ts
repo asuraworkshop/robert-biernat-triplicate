@@ -52,7 +52,6 @@ export class TriplicateComponent {
     else {
       this.triplicateLabel = 'Error.';
     }
-    console.log(this.triplicateResultArr);
   }
 
 }
